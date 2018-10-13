@@ -1,6 +1,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta property="og:url" content="http://bit.ly/You_are_your_Word_official_MP3_by_Josh_Daniels" /> 
+	<meta property="og:title" content="Introducing our New Site" />
+	<meta property="og:image" content="song-cover.jpg" />
+	<meta property="og:description" content="You are your Word -- by Josh Daniel. " />
 	
 <title> You are your Word official Song by Josh Daniels </title>
 	<link rel="icon" href="song-cover.jpg" type="image/jpg">
@@ -10,18 +14,9 @@
     let xurl = window.location.href.split('download=')[1];
      if (xurl === 'mp3' || xurl === 'm3' || xurl === 'audio' || xurl === 'song'){
        url = 'http://bit.ly/you-are-your-word-josh-daniels';
-	     document.querySelector('header').innerHTML +=`<meta property="og:url" content="${url}" /> 
-	<meta property="og:title" content="Introducing our New Site" />
-	<meta property="og:image" content="song-cover.jpg" />
-	<meta property="og:description" content="You are your Word -- by Josh Daniel. " />
-	`;
+	    
     }else if (xurl === 'lyrics' || xurl === 'mp4' || xurl === 'video'){
         url = 'http://bit.ly/you-are-your-word-josh-daniels';
-	       document.querySelector('header').innerHTML +=`<meta property="og:url" content="${url}" /> 
-	<meta property="og:title" content="Introducing our New Site" />
-	<meta property="og:image" content="song-cover.jpg" />
-	<meta property="og:description" content="You are your Word -- by Josh Daniel. " />
-	`;
     }
     if (url !== 'all'){
         setTimeout(function() {
