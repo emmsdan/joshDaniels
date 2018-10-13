@@ -1,6 +1,15 @@
 <script>
-setTimeout(function() {
-    let url = window.location.href.split('download=')[1];
-    alert(url)
-  }, 5000);
+    
+    let url = 'all';
+    let xurl = window.location.href.split('download=')[1];
+     if (xurl === 'mp3' || xurl === 'audio' || xurl === 'song'){
+       url = 'http://bit.ly/you-are-your-word-josh-daniels';
+    }else if (xurl === 'lyrics' || xurl === 'mp4' || xurl === 'video'){
+        url = 'http://bit.ly/you-are-your-word-josh-daniels';
+    }
+    if (url !== 'all'){
+        setTimeout(function() {
+               window.location.replace(url);
+          }, 5000);
+    }
 </script>
